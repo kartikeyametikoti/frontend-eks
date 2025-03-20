@@ -25,7 +25,7 @@ jobs:
            aws ecr get-login-password --region ${{ secrets.AWS_REGION}} | docker login --username AWS --password-stdin $ECR_password
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.FRONTEND_IMAGE_NAME}} .
+          docker build -t frontend .
       - name: Push image to ECR
         run: |
           docker tag frontend:latest ${{ secrets.ECR_REPO_frontend }}:${{ secrets.IMAGE_TAG}}
