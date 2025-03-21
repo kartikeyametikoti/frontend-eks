@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: frontend-deployment
   labels:
-    app: frontend
+    app: {{ include "frontend-label" . }}
 spec:
   replicas: {{ .Values.frontend.replicas }}
   selector:
     matchLabels:
-      app: frontend
+      app: {{ include "frontend-label" . }}
   template:
     metadata:
       labels:
-        app: frontend
+        app: {{ include "frontend-label" . }}
     spec:
       containers:
       - name: frontend

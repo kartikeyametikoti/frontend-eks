@@ -2,6 +2,7 @@ ingress:
   host: a5b932b222704417ba8c156b8398fdbb-1366802763.us-east-1.elb.amazonaws.com
 frontend:
   replicas: 2
+  label: frontend
   image:
     repository: 869935092862.dkr.ecr.us-east-1.amazonaws.com/frontend
     tag: latest
