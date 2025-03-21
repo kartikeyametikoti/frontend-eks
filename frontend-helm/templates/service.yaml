@@ -7,6 +7,6 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: {{ .values.frontend.service.port }}
-      targetPort: {{ .values.frontend.service.targetPort }}
+      port: {{ .Values.frontend.service.port }}
+      targetPort: {{ .Values.frontend.service.targetPort }}
   type: {{ .Values.frontend.service.type }}
