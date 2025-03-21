@@ -5,7 +5,7 @@ frontend:
   label: frontend
   image:
     repository: 869935092862.dkr.ecr.us-east-1.amazonaws.com/frontend
-    tag: latest
+    tag: ""
     ports:
       port: 80
   service:
