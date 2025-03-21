@@ -14,7 +14,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://${{ secrets.BACKEND_URL }}/api/signup", formData);
+      const response = await axios.post("http://a5b932b222704417ba8c156b8398fdbb-1366802763.us-east-1.elb.amazonaws.com/api/signup", formData);
       alert(response.data.message);
       navigate("/login");
     } catch (error) {
