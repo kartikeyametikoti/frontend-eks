@@ -4,7 +4,7 @@ frontend:
   replicas: 2
   label: frontend
   image:
-    repository: 298334369719.dkr.ecr.us-east-1.amazonaws.com/frontend
+    repository: 015800953128.dkr.ecr.us-east-1.amazonaws.com/frontend
     tag: ""
     ports:
       port: 80
